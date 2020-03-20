@@ -5,7 +5,6 @@ public class Main {
 
         metod_1();
         metod_2();
-
     }
      static private void metod_1() {
             final int size = 10000000;
@@ -49,8 +48,5 @@ public class Main {
         System.arraycopy(arr2, 0, arr, h, h);
 
         System.out.println(System.currentTimeMillis()-a);
-
     }
-
-
 }
