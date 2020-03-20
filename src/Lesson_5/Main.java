@@ -9,9 +9,9 @@ public class Main {
     }
      static private void metod_1() {
             final int size = 10000000;
-            final int h = size / 2;
             float[] arr = new float[size];
-            for (float g:arr) g = 1;
+            for (float g:arr) {g = 1;}
+
             long a = System.currentTimeMillis();
 
             for (int i = 0; i < size ; i++) {
@@ -19,7 +19,6 @@ public class Main {
             }
 
           System.out.println(System.currentTimeMillis() - a);
-
     }
 
     static private void metod_2() {
@@ -28,7 +27,7 @@ public class Main {
         float[] arr = new float[size];
         float[] arr1 = new float[h];
         float[] arr2 = new float[h];
-        for (float g:arr) g = 1;
+        for (float g:arr) {g = 1;}
         long a = System.currentTimeMillis();
 
         System.arraycopy(arr, 0, arr1, 0, h);
@@ -48,7 +47,6 @@ public class Main {
 
         System.arraycopy(arr1, 0, arr, 0, h);
         System.arraycopy(arr2, 0, arr, h, h);
-
 
         System.out.println(System.currentTimeMillis()-a);
 
